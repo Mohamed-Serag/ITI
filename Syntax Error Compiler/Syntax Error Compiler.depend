@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1603062547 source:c:\users\gamma\desktop\syntax error compiler\compiler.c
+	"compiler.h"
+
+1603048296 c:\users\gamma\desktop\syntax error compiler\compiler.h
+	"main.h"
+
+1603061367 c:\users\gamma\desktop\syntax error compiler\main.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"compiler.h"
+
+1603048381 source:c:\users\gamma\desktop\syntax error compiler\main.c
+	"main.h"
+
