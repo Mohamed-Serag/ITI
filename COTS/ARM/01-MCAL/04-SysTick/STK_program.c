@@ -59,7 +59,9 @@ void MSTK_voidSetBusyWait(u32 Copy_u32Ticks)
 	while(GET_BIT(MSTK -> CTRL, 16) == 0);
 	/* Disable the STK */
 	CLR_BIT(MSTK -> CTRL, 0);
+	/* Clear STK LOAD register */
 	MSTK -> LOAD = 0;
+	/* Clear STK VAL register */
 	MSTK -> VAL = 0;
 }
 
@@ -142,7 +144,7 @@ void MSTK_voidStopInterval(void)
 /********************************************************************************************/
 u32 MSTK_u32GetElapsedTicks(void)
 {
-	u32	Local_u32Ticks = 0;
+	u32 Local_u32Ticks = 0;
 	Local_u32Ticks = ((MSTK -> LOAD) - (MSTK -> VAL));
 	return Local_u32Ticks;
 }
@@ -157,7 +159,7 @@ u32 MSTK_u32GetElapsedTicks(void)
 /********************************************************************************************/
 u32 MSTK_u32GetRemainingTicks(void)
 {
-	u32	Local_u32RemainingTicks = 0;
+	u32 Local_u32RemainingTicks = 0;
 	Local_u32RemainingTicks = MSTK -> VAL;
 	return Local_u32RemainingTicks;
 }
