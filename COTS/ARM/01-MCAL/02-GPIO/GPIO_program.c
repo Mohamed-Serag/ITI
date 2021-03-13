@@ -22,12 +22,14 @@
 /* Function Info : This function sets the direction of the pin including        */
 /*                 pin mode.                                                    */
 /* Function Input: This function takes the following Parameters:                */
-/*                 - Copy_u8PortID     : The available choices are:             */
+/*                 - Copy_u8PortID     : The targeted port, and the available   */
+/*                                       choices are:                           */
 /*                                       -> GPIO_U8_PORTA                       */
 /*                                       -> GPIO_U8_PORTB                       */
 /*                                       -> GPIO_U8_PORTC                       */
 /*                                                                              */
-/*                 - Copy_u8PinID      : The available choices are:             */
+/*                 - Copy_u8PinID      : The targeted pin, and the available    */
+/*                                       choices are:                           */
 /*                                       -> GPIO_U8_PIN0     -> GPIO_U8_PIN1    */
 /*                                       -> GPIO_U8_PIN2     -> GPIO_U8_PIN3    */
 /*                                       -> GPIO_U8_PIN4     -> GPIO_U8_PIN5    */
@@ -42,7 +44,8 @@
 /*                                       -> GPIO_U8_PIN14                       */
 /*                                       -> GPIO_U8_PIN15                       */
 /*                                                                              */
-/*                 - Copy_u8DirectionID : The available choices are:            */
+/*                 - Copy_u8DirectionID : The required direction, and available */
+/*                                        choices are:                          */
 /*                                       -> GPIO_U8_INPUT_ANALOG                */
 /*                                       -> GPIO_U8_INPUT_FLOATING              */
 /*                                       -> GPIO_U8_INPUT_PULL_UP_DOWN          */
