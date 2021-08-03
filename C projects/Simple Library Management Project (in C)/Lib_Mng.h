@@ -22,10 +22,10 @@
 /*********************** Macros Definitions **************************/
 /*********************************************************************/
 #define MAXIMUM_WRONG_ENTRIES (3U)
-#define MAXIMUM_BOOKS_NUMBER (100U)
-#define NO_BOOKS (0U)
-#define NO_ERRORS (0U)
-#define ZERO_WITH_SIGNED (0)
+#define MAXIMUM_BOOKS_NUMBER  (100U)
+#define NO_BOOKS              (0U)
+#define NO_ERRORS             (0U)
+#define ZERO_WITH_SIGNED      (0)
 
 /*********************************************************************/
 /********************* User-Defined data types ***********************/
